@@ -111,7 +111,6 @@ int main(int argc, char const *argv[]) {
   }
   int winner = 0;
   for (int i = 0;  i < (signed) bingonumbers.size(); i++) {
-    std::cout << "runs" << '\n';
     Flip(boards, bingonumbers[i]);
     if (i > 3) {
       if (Horizontal(boards) != -1) {
