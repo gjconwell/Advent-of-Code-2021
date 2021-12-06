@@ -39,5 +39,6 @@ int main(int argc, char const *argv[]) {
   for (int j = 0; j < 80; j++) {
     DayPass(fishy);
   }
+  std::cout << fishy.size() << '\n';
   return 0;
 }
