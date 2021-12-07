@@ -14,9 +14,7 @@ int BestFit(std::vector<int> &crabs, int value) {
   for (int j = 0; j < value; j++) {
     int count = 0;
     for (int i = 0; i < (signed) crabs.size(); i++) {
-      for (int k = 1; k < std::abs(crabs[i] - j) + 1; k++) {
-        count += k;
-      }
+      count += (std::abs(crabs[i] - j) * (std::abs(crabs[i] - j) + 1)) / 2;
     }
     if (j == 0) {
       min = count;
