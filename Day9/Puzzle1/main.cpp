@@ -3,7 +3,7 @@
 #include <string>
 #include <fstream>
 
-//cd /mnt/c/Users/conweg/Documents/Coding/Advent_of_Code_2021/Day8\9/Puzzle1
+//cd /mnt/c/Users/conweg/Documents/Coding/Advent_of_Code_2021/Day9/Puzzle1
 //g++ main.cpp -o main.exe -Wall
 //./main.exe
 
