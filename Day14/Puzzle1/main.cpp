@@ -21,7 +21,6 @@ void Step(std::list<char> &polymer, std::map<char, int> &chars,
     ppair += *it;
     for (int i = 0; i < (int) instruct.size(); i++) {
       if (instruct[i].first == ppair) {
-        // std::cout << instruct[i].second << '\n';
         chars[instruct[i].second]++;
         stage.push_back(std::make_pair(instruct[i].second, it));
       }
