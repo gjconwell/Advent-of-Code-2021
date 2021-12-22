@@ -8,6 +8,7 @@
 //cd /mnt/c/Users/gjcon/github/Advent-of-Code-2021/Day22/Puzzle1
 //g++ main.cpp -o main.exe -Wall
 //./main.exe
+
 void Reboot(std::set<std::pair<int, std::pair<int, int>>> &cuboid, bool toggle,
             std::string sx1, std::string sy1, std::string sx2,
             std::string sy2, std::string sz1, std::string sz2) {
@@ -25,7 +26,6 @@ void Reboot(std::set<std::pair<int, std::pair<int, int>>> &cuboid, bool toggle,
       for (int k = z1; k <= z2; k++) {
         std::pair<int,int> yz (j,k);
         std::pair<int, std::pair<int,int>> xyz (i, yz);
-        // std::cout << num << '\n';
         if (toggle) {
           cuboid.insert(xyz);
         } else {
